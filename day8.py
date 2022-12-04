@@ -8,6 +8,7 @@ import numpy as np
 WIDTH = 50
 HEIGHT = 6
 
+
 class Screen:
     def __init__(self, filename):
         self.screen = np.zeros((HEIGHT, WIDTH))
@@ -24,7 +25,6 @@ class Screen:
                     result += " "
             result += "\n"
         return result
-
 
     def get_input(self, filename):
         with open(filename, "r") as f:
@@ -67,6 +67,7 @@ class Screen:
     def result_part_2(self):
         print("Part 2:")
         print(self)
+
 
 s = Screen("8.input")
 

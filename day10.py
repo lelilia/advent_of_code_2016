@@ -4,10 +4,10 @@ Advent of Code 2016
 """
 
 
-
 def get_input(filename):
     with open(filename, "r") as f:
         return f.readlines()
+
 
 class Bot:
     def __init__(self, name):
@@ -83,10 +83,6 @@ if __name__ == "__main__":
                     full_bots.append(bots[index_high])
             else:
                 bots[index_high].output = value_high
-
-
-
-
 
     for bot in bots.values():
         if bot.items == [61, 17] or bot.items == [17, 61]:
